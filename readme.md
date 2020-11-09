@@ -42,6 +42,8 @@ First, uncomment line 13, 14 and 16 in doc/conf.py and edit code at line 16 by f
 sys.path.insert(0, os.path.abspath("../<your_package_name>"))
 ```
 
+Then, update your project information at line 21, 22 and 23
+
 ### Update setup.cfg
 In [build_sphinx] block, change your proejct information by following:
 ```
