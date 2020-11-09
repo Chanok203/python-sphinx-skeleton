@@ -1,12 +1,16 @@
 # Skeleton Python Package
 
 - [Installation](#Installation)
-
     - [Clone Repository](#Clone-Repository)
-
+    - [Install Packages](#Install-Packages)
     - [Change Package Name](#Change-Package-Name)
+    - [Update doc/conf.py](#Update-doc/conf.py)
+    - [Update setup.cfg](#Update-setup.cfg)
+- [Usage](#Usage)
+    - [Auto Generate Document](#Auto-Generate-Document)
+    - [Build Document](#Build-Document)
+- [Developers](#Developers)
 
-- [Developers](#Developers) 
 
 ## Installation
 
@@ -28,6 +32,39 @@ Edit directory's name from package_name to your package name by following:
 ```
 $ mv package_name <your_package_name>
 ```
+
+### Update doc/conf.py
+
+First, uncomment line 13, 14 and 16 in doc/conf.py and edit code at line 16 by following:
+
+```
+sys.path.insert(0, os.path.abspath("../<your_package_name>"))
+```
+
+### Update setup.cfg
+In [build_sphinx] block, change your proejct information by following:
+```
+[build_sphinx]
+project = <your_project_name>
+version = <version>
+release = <release_version>
+```
+
+## Usage
+
+### Auto Generate Document
+Generate document using sphinx-apidoc by following:
+```
+$ sphinx-apidoc -f -o doc <your_package_name>
+```
+
+### Build Document
+Build document using sphinx and setuptools by following:
+```
+python setup.py build_sphinx
+```
+
+The output of the above command is in build/sphinx/html.
 
 ## Developers
 
