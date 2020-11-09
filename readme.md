@@ -1,12 +1,12 @@
 # Skeleton Python Package
 
-- [Installation](##Installation)
+- [Installation](#Installation)
 
-    - [Clone Repository](###Clone-Repository)
+    - [Clone Repository](#Clone-Repository)
 
-    - [Change Package Name](###Change-Package-Name)
+    - [Change Package Name](#Change-Package-Name)
 
-- [Developers](##Developers) 
+- [Developers](#Developers) 
 
 ## Installation
 
