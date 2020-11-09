@@ -7,6 +7,7 @@
     - [Update doc/conf.py](#Update-doc/conf.py)
     - [Update setup.cfg](#Update-setup.cfg)
 - [Usage](#Usage)
+    - [Add Code](#Add-Code)
     - [Auto Generate Document](#Auto-Generate-Document)
     - [Build Document](#Build-Document)
 - [Developers](#Developers)
@@ -51,6 +52,25 @@ release = <release_version>
 ```
 
 ## Usage
+
+### Add Code
+example skeleton:
+```
+~/python-sphinx-skeleton
+    - doc/
+        - ...
+    - tests/
+        - ...
+    - setup.py
+    - ...
+    - setup.cfg
+    - <your_package_name>
+        - __init__.py
+        - <your_subpackage>/
+            - __init__.py
+            - ...
+        - ...
+```
 
 ### Auto Generate Document
 Generate document using sphinx-apidoc by following:
